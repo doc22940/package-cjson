@@ -13,11 +13,13 @@ var chalk = require('chalk'),
 var pwd = process.env.PWD;
 
 var help = function () {
-    console.log('Format:   package-cjson <compare/compare-silent/generate-package.json>');
-    console.log('Examples: package-cjson compare');
-    console.log('          package-cjson compare-silent');
-    console.log('          package-cjson generate-package.json');
-    console.log('');
+    console.log([
+        'Format:   package-cjson <compare/compare-silent/generate-package.json>',
+        'Examples: package-cjson compare',
+        '          package-cjson compare-silent',
+        '          package-cjson generate-package.json',
+        ''
+    ].join('\n'));
 };
 
 var exitWithError = function (options) {

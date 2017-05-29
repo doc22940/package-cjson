@@ -36,6 +36,9 @@
     "url": "git+https://github.com/webextensions/package-cjson.git"
   },
   "scripts": {
+    "compare": "node index.js compare",
+    "compare-silent": "node index.js compare-silent",
+    "generate-package.json": "node index.js generate-package.json",
     "lint": "./node_modules/.bin/eslint .",
     "mocha": "./node_modules/.bin/mocha",
     "start": "node index.js",
